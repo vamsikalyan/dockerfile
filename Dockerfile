@@ -1,4 +1,6 @@
 FROM almalinux:9 
-RUN useradd expense 
-USER expense
+RUN mkdir /tmp/docker 
+RUN cd /tmp/docker
+RUN pwd
+RUN echo "hello" > hello.txt
 CMD ["sleep","100"]
