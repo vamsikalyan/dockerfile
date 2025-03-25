@@ -1,6 +1,5 @@
 FROM almalinux:9 
-RUN mkdir /tmp/docker 
-WORKDIR /tmp/docker
-RUN pwd
-RUN echo "hello" > hello.txt
-CMD ["sleep","200"]
+ARG course="Devops with AWS" \
+    duration="120hrs"
+RUN echo "course: $course, duration: $duration"
+CMD ["sleep","120hrs"]
